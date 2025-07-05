@@ -1,78 +1,85 @@
+# =====================================================================================
+# == VERSI FINAL LENGKAP - simulation_main.py ==
+# =====================================================================================
+# File ini adalah "Sutradara" utama.
+# Penjelasan:
+# - Pertama, kita impor semua library dan file lain yang dibutuhkan.
+# - Kedua, kita definisikan fungsi-fungsi pembantu ("para Aktor") seperti replace_in_readme.
+# - Ketiga, baru kita definisikan fungsi utama ("Sang Sutradara") yaitu main().
+# - Terakhir, kita panggil main() untuk memulai pertunjukan.
+# =====================================================================================
+
 import os
 import re
 import sys
 from github import Github
-from assessment_logic import VulnerabilityAssessment
 import markdown_generator
+from assessment_logic import VulnerabilityAssessment
 
-# Variabel global untuk keamanan, akan diisi oleh GitHub Actions
-GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
-GITHUB_REPOSITORY = os.environ.get('GITHUB_REPOSITORY')
-ISSUE_NUMBER = int(os.environ.get('ISSUE_NUMBER'))
-
+# == AKTOR 1: FUNGSI UNTUK MENGGANTI KONTEN README ==
+# Kita definisikan aktor ini di awal agar bisa dipanggil oleh Sutradara (main).
 def replace_in_readme(marker_name, new_content):
     """
     Fungsi untuk mencari 'slot' di README.md dan menggantinya dengan konten baru.
+    Versi ini menggunakan Regular Expressions (regex) untuk presisi maksimal.
     """
     try:
-        with open('README.md', 'r', encoding='utf-8') as f:
+        with open('README.md', 'r+', encoding='utf-8') as f:
             readme_content = f.read()
+
+            marker_begin = f""
+            marker_end = f""
+            pattern = re.compile(f"({re.escape(marker_begin)})(.*?)({re.escape(marker_end)})", re.DOTALL)
+
+            replacement = f"\n{new_content}\n"
+            full_replacement_block = f"\\1{replacement}\\3"
+            
+            new_readme, count = pattern.subn(full_replacement_block, readme_content)
+
+            if count > 0:
+                f.seek(0)
+                f.truncate()
+                f.write(new_readme)
+                print(f"README.md berhasil diupdate untuk marker: {marker_name}")
+            else:
+                print(f"ERROR: Penanda {marker_name} tidak ditemukan di README.md! Tidak ada perubahan yang dilakukan.")
+
     except FileNotFoundError:
         print("ERROR: README.md tidak ditemukan!")
         sys.exit(1)
-        
-    marker_begin = f""
-    marker_end = f""
-    
-    # Memastikan kedua penanda ada di file
-    if marker_begin not in readme_content or marker_end not in readme_content:
-        print(f"ERROR: Penanda {marker_name} tidak ditemukan di README.md!")
-        return
 
-    # Meregenerasi konten README
-    before_marker = readme_content.split(marker_begin)[0]
-    after_marker = readme_content.split(marker_end)[1]
-    
-    new_readme = f"{before_marker}{marker_begin}\n{new_content}\n{marker_end}{after_marker}"
-    
-    with open('README.md', 'w', encoding='utf-8') as f:
-        f.write(new_readme)
-    print(f"README.md berhasil diupdate untuk marker: {marker_name}")
-
+# == SUTRADARA: FUNGSI UTAMA YANG MENGATUR SEMUANYA ==
 def main():
     """
     Fungsi utama yang dijalankan oleh GitHub Actions.
-    Ini adalah 'Sutradara' dari keseluruhan proses.
     """
+    # Memuat variabel rahasia dari GitHub Actions
+    GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
+    GITHUB_REPOSITORY = os.environ.get('GITHUB_REPOSITORY')
+    ISSUE_NUMBER = int(os.environ.get('ISSUE_NUMBER'))
+
     if not all([GITHUB_TOKEN, GITHUB_REPOSITORY, ISSUE_NUMBER]):
-        print("ERROR: Variabel environment (GITHUB_TOKEN, GITHUB_REPOSITORY, ISSUE_NUMBER) tidak di-set!")
+        print("ERROR: Variabel environment tidak di-set!")
         sys.exit(1)
         
-    # 1. Menghubungi GitHub API
     repo = Github(GITHUB_TOKEN).get_repo(GITHUB_REPOSITORY)
     issue = repo.get_issue(number=ISSUE_NUMBER)
     issue_author = '@' + issue.user.login
     
-    # 2. Memanggil 'Otak'
     assessment = VulnerabilityAssessment()
-
-    # 3. Memahami perintah dari judul issue
     issue_title = issue.title
     
-    # Jika perintahnya adalah reset
+    # Memproses perintah berdasarkan judul issue
     if issue_title == "VA: Reset Simulation":
-        if issue.user.login == GITHUB_REPOSITORY.split('/')[0]: # Hanya pemilik repo yang bisa reset
+        if issue.user.login == GITHUB_REPOSITORY.split('/')[0]:
             assessment.reset_simulation()
             issue.create_comment("Sistem simulasi berhasil di-reset. Kerentanan baru telah digenerate secara acak.")
             print("Simulasi di-reset oleh pemilik repositori.")
         else:
             issue.create_comment("Gagal: Hanya pemilik repositori yang dapat me-reset simulasi.")
-            issue.edit(state='closed', labels=['Invalid'])
             print("Percobaan reset gagal oleh non-pemilik.")
-            return
-
-    # Jika perintahnya adalah scan
     else:
+        # Mencari perintah 'scan'
         match = re.search(r'VA: Run Scan on (Web Server|Database Server|Mail Server)', issue_title)
         if match:
             server_name = match.group(1)
@@ -81,25 +88,26 @@ def main():
             
             result_code, result_text = assessment.scan_server(server_index, issue_author)
             
-            # Memberi respons di issue
             issue.create_comment(f"Terima kasih {issue_author} telah berpartisipasi! Hasil scan pada **{server_name}**: `{result_text}`")
             issue.edit(state='closed', labels=[f"Status: {result_code}"])
             print(f"Scan berhasil diproses untuk {server_name}.")
         else:
             issue.create_comment("Perintah tidak dikenali. Pastikan judul issue sesuai format.")
-            issue.edit(state='closed', labels=['Invalid'])
             print(f"Perintah tidak dikenali: {issue_title}")
-            return
 
-    # 4. Memanggil 'Tangan Seniman' untuk menggambar semua bagian
+    # Mengupdate README dengan memanggil semua Aktor
     board_md = markdown_generator.generate_va_board(assessment)
     last_scans_md = markdown_generator.generate_last_scans(assessment)
     top_operators_md = markdown_generator.generate_top_operators(assessment)
     
-    # 5. Mengupdate README
     replace_in_readme('VA_BOARD', board_md)
     replace_in_readme('LAST_SCANS', last_scans_md)
     replace_in_readme('TOP_OPERATORS', top_operators_md)
+    
+    if issue.state == 'open':
+        issue.edit(state='closed')
 
+# == PERTUNJUKAN DIMULAI! ==
+# Baris ini yang akan memanggil Sang Sutradara untuk memulai pekerjaannya.
 if __name__ == "__main__":
     main()
