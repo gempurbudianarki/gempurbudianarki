@@ -6,7 +6,8 @@
 
 <h1 align="center">Gempur Budi Anarki</h1>
 
-<p align="center"><em>Cybersecurity Architect & Principal Developer</em></p>
+<p align="center"><em>💼 Cybersecurity & Ethical Hacking Specialist | 👨‍💻 Lead Developer
+</em></p>
 
 <p align="center">
   <a href="https://linktr.ee/gempurBUDI">
@@ -109,7 +110,7 @@
 ## 🎮 Retro Gaming Corner
 
 <p align="center">
-  <em>"Di antara baris kode dan debugging, ada dunia kecil tempat master hacker bersantai."</em><br>
+  <em>"Di antara baris kode dan debugging, Alah capek ketua ngantuk mau tidur dulu, Titip bumi ya😒."</em><br>
   <img src="https://i.gifer.com/7S3A.gif" width="200px" alt="Retro Pacman">
 </p>
 
