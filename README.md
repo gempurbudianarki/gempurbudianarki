@@ -1,31 +1,32 @@
-<!-- Banner Animated -->
+<!-- TOP BANNER 2D DEV -->
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DenverCoder1/minimalistic-wallpaper-collection/main/wallpapers/gradient/gradient-wave.gif" width="900" />
+  <img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" width="480" alt="Coding 2D Animation">
 </p>
 
-<h1 align="center">✨ Gempur Budi Anarki ✨</h1>
+<h1 align="center">Hi, I'm Gempur 👋</h1>
 
 <p align="center">
-  <em>Full-Stack Developer (Masih pemula, tapi grinding tiap hari)</em>
+  <em>Full-Stack Developer • Pemula yang lagi rajin nge-grind skill setiap hari</em>
 </p>
 
 <p align="center">
   <a href="https://linktr.ee/gempurBUDI">
-    <img src="https://img.shields.io/badge/Linktree-43E660?style=for-the-badge&logo=linktree&logoColor=white">
+    <img src="https://img.shields.io/badge/Linktree-43E660?style=for-the-badge&logo=linktree&logoColor=white" alt="Linktree Badge">
   </a>
-  <img src="https://komarev.com/ghpvc/?username=gempurbudianarki&style=for-the-badge&color=blue">
 </p>
 
 ---
 
-## 🌈 About Me
+## ✨ Little Intro
+
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?color=82aaff&size=23&center=true&vCenter=true&width=600&lines=Full+Stack+Dev+Pemula;Belajar+Tiada+Henti;Fokus+Backend+%26+Frontend;Nge-grind+skill+setiap+hari;Error+itu+teman+baik" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00D1FF&center=true&vCenter=true&width=600&lines=Belajar+Full+Stack+Development;Ngoding+pelan+pelan+yang+penting+konsisten;Error+itu+teman+sehari-hari;Ngulik+web%2C+API%2C+dan+database" />
 </p>
 
 ---
 
 ## 🧰 Tech Stack
+
 <div align="center">
 
 ### 🔹 Languages
@@ -38,59 +39,50 @@
 <img src="https://skillicons.dev/icons?i=mysql,sqlite" />
 
 ### 🔹 Tools
-<img src="https://skillicons.dev/icons?i=vscode,github,git,postman" />
+<img src="https://skillicons.dev/icons?i=vscode,git,github,postman" />
 
 </div>
 
 ---
 
-## 🎨 Animated Skills Card
+## 🧑‍💻 Dev Vibes (2D GIF Zone)
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/0xN17/0xN17/main/assets/devcard.png" width="400" />
+  <img src="https://user-images.githubusercontent.com/74038190/212749171-b84692a8-2b04-4e3b-93ca-ac14705da224.gif" width="320" alt="Dev 2D Working Animation">
+</p>
+
+<p align="center">
+  <em>"Ngoding dulu, paham belakangan."</em>
 </p>
 
 ---
 
-## 📊 GitHub Stats
-<p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=gempurbudianarki&show_icons=true&theme=tokyonight&hide_border=true" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gempurbudianarki&layout=compact&theme=tokyonight&hide_border=true" />
-</p>
 
----
 
 ## ⚡ Activity Graph
+
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gempurbudianarki&theme=react-dark&hide_border=true&area=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=gempurbudianarki&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
 </p>
 
 ---
 
 ## 🐍 Contribution Snake
+
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub Snake" />
 </p>
 
 ---
 
-## ✨ Neon Quote
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?color=00FFA9&size=25&center=true&vCenter=true&width=600&lines=%22Ngoding+itu+proses%2C+progres+itu+kemenangan%22.;%22Belajar+pelan+pelan+nggak+papah%2C+yang+peting+konsisten%22.;%22Error+itu+guru+terbaik%22." />
-</p>
+## 💬 Simple Motto
 
----
-
-## 💬 Sosmed & Contacts
 <p align="center">
-  <a href="https://linktr.ee/gempurBUDI">
-    <img src="https://img.shields.io/badge/Follow_Me-00FFC6?style=for-the-badge&logo=linktree&logoColor=black">
-  </a>
+  <img src="https://readme-typing-svg.herokuapp.com?size=20&duration=3500&color=00FFAA&center=true&vCenter=true&width=600&lines=Grow+slow%2C+grow+strong.;Belajar+pelan+pelan+yang+penting+nggak+berhenti.;Eat+%F0%9F%8D%95+Sleep+%F0%9F%9A%A4+Code+%F0%9F%92%BB+Repeat" />
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/trinib/trinib/main/images/terminal.gif" width="600">
+  <sub>Thanks for scrolling sampai bawah 🙌</sub>
 </p>
-
-<p align="center"><b>Thanks for visiting! 🚀</b></p>
