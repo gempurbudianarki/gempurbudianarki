@@ -17,7 +17,7 @@
 
 ---
 
-## ✨ Little Intro
+
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=3500&color=00D1FF&center=true&vCenter=true&width=600&lines=Belajar+Full+Stack+Development;Ngoding+pelan+pelan+yang+penting+konsisten;Error+itu+teman+sehari-hari;Ngulik+web%2C+API%2C+dan+database" />
@@ -45,7 +45,7 @@
 
 ---
 
-## 🧑‍💻 Dev Vibes (2D GIF Zone)
+
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/74038190/212749171-b84692a8-2b04-4e3b-93ca-ac14705da224.gif" width="320" alt="Dev 2D Working Animation">
@@ -59,7 +59,7 @@
 
 
 
-## ⚡ Activity Graph
+
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=gempurbudianarki&theme=react-dark&hide_border=true&area=true" alt="Activity Graph" />
@@ -67,7 +67,7 @@
 
 ---
 
-## 🐍 Contribution Snake
+
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="GitHub Snake" />
@@ -75,7 +75,6 @@
 
 ---
 
-## 💬 Simple Motto
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?size=20&duration=3500&color=00FFAA&center=true&vCenter=true&width=600&lines=Grow+slow%2C+grow+strong.;Belajar+pelan+pelan+yang+penting+nggak+berhenti.;Eat+%F0%9F%8D%95+Sleep+%F0%9F%9A%A4+Code+%F0%9F%92%BB+Repeat" />
