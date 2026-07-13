@@ -61,6 +61,52 @@
 
 ---
 
+<h2 align="center">🛡️ Live Vulnerability Assessment Simulation</h2>
+<p align="center">
+  <em>Klik tombol "Scan" di bawah untuk mensimulasikan pemindaian keamanan server secara langsung via GitHub Actions!</em>
+</p>
+
+<!-- VA_BOARD_START -->
+<table align='center'>
+  <tr>
+    <td align='center' width='33%'><b>[Scan Web Server](https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Web+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.)</b></td>
+    <td align='center' width='33%'><b>[Scan Database Server](https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Database+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.)</b></td>
+    <td align='center' width='33%'><b>[Scan Mail Server](https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Mail+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.)</b></td>
+  </tr>
+  <tr>
+    <td align='center'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/white/rook.png' width='60' alt='server_web icon'></td>
+    <td align='center'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/white/knight.png' width='60' alt='server_db icon'></td>
+    <td align='center'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/white/bishop.png' width='60' alt='server_mail icon'></td>
+  </tr>
+  <tr>
+    <td align='center' style='padding-top: 5px;'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/blank.png' width='50px' alt='UNSCANNED status'><br><small>`Status: Not Scanned`</small></td>
+    <td align='center' style='padding-top: 5px;'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/blank.png' width='50px' alt='UNSCANNED status'><br><small>`Status: Not Scanned`</small></td>
+    <td align='center' style='padding-top: 5px;'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/blank.png' width='50px' alt='UNSCANNED status'><br><small>`Status: Not Scanned`</small></td>
+  </tr>
+</table>
+<!-- VA_BOARD_END -->
+
+<br>
+
+<table align="center" width="100%">
+  <tr>
+    <td width="50%" valign="top">
+      <h4 align="center">🕒 Last Scans</h4>
+<!-- LAST_SCANS_START -->
+- Belum ada aktivitas scan.
+<!-- LAST_SCANS_END -->
+    </td>
+    <td width="50%" valign="top">
+      <h4 align="center">🏆 Top Operators</h4>
+<!-- TOP_OPERATORS_START -->
+- Belum ada operator yang berpartisipasi.
+<!-- TOP_OPERATORS_END -->
+    </td>
+  </tr>
+</table>
+
+---
+
 
 
 

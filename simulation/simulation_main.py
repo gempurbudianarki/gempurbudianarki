@@ -23,8 +23,8 @@ def replace_in_readme(marker_name, new_content):
         with open('README.md', 'r+', encoding='utf-8') as f:
             readme_content = f.read()
 
-            marker_begin = f""
-            marker_end = f""
+            marker_begin = f"<!-- {marker_name}_START -->"
+            marker_end = f"<!-- {marker_name}_END -->"
             pattern = re.compile(f"({re.escape(marker_begin)})(.*?)({re.escape(marker_end)})", re.DOTALL)
 
             replacement = f"\n{new_content}\n"
