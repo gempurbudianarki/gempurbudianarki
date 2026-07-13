@@ -1,6 +1,10 @@
-<!-- TOP BANNER 2D DEV -->
+<!-- PREMIUM HERO BANNER -->
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212749447-bfb7e725-6987-49d9-ae85-2015e3e7cc41.gif" width="480" alt="Coding 2D Animation">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="light.svg">
+    <img alt="Hero Banner" src="dark.svg" width="100%">
+  </picture>
 </p>
 
 <h1 align="center">Hi, I'm Gempur 👋</h1>
