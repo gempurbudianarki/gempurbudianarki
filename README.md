@@ -79,7 +79,7 @@
     <td align='center'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/white/bishop.png' width='60' alt='server_mail icon'></td>
   </tr>
   <tr>
-    <td align='center' style='padding-top: 5px;'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/blank.png' width='50px' alt='UNSCANNED status'><br><small>`Status: Not Scanned`</small></td>
+    <td align='center' style='padding-top: 5px;'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/yellow.png' width='50px' alt='SECURE status'><br><small>`SECURE: No Vulnerabilities Found`</small></td>
     <td align='center' style='padding-top: 5px;'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/blank.png' width='50px' alt='UNSCANNED status'><br><small>`Status: Not Scanned`</small></td>
     <td align='center' style='padding-top: 5px;'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/blank.png' width='50px' alt='UNSCANNED status'><br><small>`Status: Not Scanned`</small></td>
   </tr>
@@ -93,13 +93,13 @@
     <td width="50%" valign="top">
       <h4 align="center">🕒 Last Scans</h4>
 <!-- LAST_SCANS_START -->
-<ul><li>Belum ada aktivitas scan.</li></ul>
+<ul><li><code>2026-07-13 00:17:47</code>: <b>Web Server</b> - Result: <code>SECURE</code> by <code>@skywardseamkbs-glitch</code></li></ul>
 <!-- LAST_SCANS_END -->
     </td>
     <td width="50%" valign="top">
       <h4 align="center">🏆 Top Operators</h4>
 <!-- TOP_OPERATORS_START -->
-<ul><li>Belum ada operator yang berpartisipasi.</li></ul>
+<ul><li><b>@skywardseamkbs-glitch</b>: 1 scans</li></ul>
 <!-- TOP_OPERATORS_END -->
     </td>
   </tr>
