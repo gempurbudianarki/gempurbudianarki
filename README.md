@@ -1,9 +1,9 @@
 <!-- PREMIUM HERO BANNER -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="light.svg">
-    <img alt="Hero Banner" src="dark.svg" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gempurbudianarki/gempurbudianarki/main/dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gempurbudianarki/gempurbudianarki/main/light.svg">
+    <img alt="Hero Banner" src="https://raw.githubusercontent.com/gempurbudianarki/gempurbudianarki/main/dark.svg" width="100%">
   </picture>
 </p>
 
@@ -69,9 +69,9 @@
 <!-- VA_BOARD_START -->
 <table align='center'>
   <tr>
-    <td align='center' width='33%'><b>[Scan Web Server](https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Web+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.)</b></td>
-    <td align='center' width='33%'><b>[Scan Database Server](https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Database+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.)</b></td>
-    <td align='center' width='33%'><b>[Scan Mail Server](https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Mail+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.)</b></td>
+    <td align='center' width='33%'><b><a href="https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Web+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.">Scan Web Server</a></b></td>
+    <td align='center' width='33%'><b><a href="https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Database+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.">Scan Database Server</a></b></td>
+    <td align='center' width='33%'><b><a href="https://github.com/gempurbudianarki/gempurbudianarki/issues/new?title=VA%3A+Run+Scan+on+Mail+Server&body=This+issue+was+automatically+generated+by+clicking+a+link+on+the+profile+README.+Please+submit+it+to+run+the+scan.">Scan Mail Server</a></b></td>
   </tr>
   <tr>
     <td align='center'><img src='https://raw.githubusercontent.com/trinib/trinib/main/img/white/rook.png' width='60' alt='server_web icon'></td>
@@ -93,13 +93,13 @@
     <td width="50%" valign="top">
       <h4 align="center">🕒 Last Scans</h4>
 <!-- LAST_SCANS_START -->
-- Belum ada aktivitas scan.
+<ul><li>Belum ada aktivitas scan.</li></ul>
 <!-- LAST_SCANS_END -->
     </td>
     <td width="50%" valign="top">
       <h4 align="center">🏆 Top Operators</h4>
 <!-- TOP_OPERATORS_START -->
-- Belum ada operator yang berpartisipasi.
+<ul><li>Belum ada operator yang berpartisipasi.</li></ul>
 <!-- TOP_OPERATORS_END -->
     </td>
   </tr>

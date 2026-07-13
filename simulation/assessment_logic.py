@@ -74,7 +74,7 @@ class VulnerabilityAssessment:
             # Update Last Scans
             from datetime import datetime
             now = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            self.last_scans.insert(0, f"`{now}`: **{server['name']}** - Result: `{server['result_code']}` by `{scanner_name}`")
+            self.last_scans.insert(0, f"<code>{now}</code>: <b>{server['name']}</b> - Result: <code>{server['result_code']}</code> by <code>{scanner_name}</code>")
             if len(self.last_scans) > 5: # Batasi hanya 5 log terakhir
                 self.last_scans.pop()
 

@@ -32,7 +32,7 @@ def _create_issue_link(text, server_index):
     params = urlencode({'title': title, 'body': body})
     repo_path = os.environ.get('GITHUB_REPOSITORY', 'gempurbudianarki/gempurbudianarki')
     issue_url = f"https://github.com/{repo_path}/issues/new?{params}"
-    return f"[{text}]({issue_url})"
+    return f'<a href="{issue_url}">{text}</a>'
 
 def generate_va_board(assessment):
     """
@@ -75,14 +75,13 @@ def generate_va_board(assessment):
 def generate_last_scans(assessment):
     """Menghasilkan daftar 5 aktivitas scan terakhir."""
     if not assessment.last_scans:
-        return "- Belum ada aktivitas scan."
-    return "<br>".join([f"- {scan}" for scan in assessment.last_scans])
+        return "<ul><li>Belum ada aktivitas scan.</li></ul>"
+    return "<ul>" + "".join([f"<li>{scan}</li>" for scan in assessment.last_scans]) + "</ul>"
 
 def generate_top_operators(assessment):
     """Menghasilkan daftar 5 operator teratas."""
     if not assessment.scanners:
-        return "- Belum ada operator yang berpartisipasi."
+        return "<ul><li>Belum ada operator yang berpartisipasi.</li></ul>"
     
     sorted_scanners = sorted(assessment.scanners.items(), key=lambda item: item[1], reverse=True)[:5]
-    
-    return "<br>".join([f"- **{scanner}**: {count} scans" for scanner, count in sorted_scanners])
+    return "<ul>" + "".join([f"<li><b>{scanner}</b>: {count} scans</li>" for scanner, count in sorted_scanners]) + "</ul>"
